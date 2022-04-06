@@ -5,10 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+  public Animator transition;
   
+public void Update(){
+  if (SceneManager.GetActiveScene().name == "BetterLook" && Input.GetKeyDown(KeyCode.Backspace)){
+    StartCoroutine(LoadSceneAnimated("Scan screen"));
+  }
+}
+
   public void LoadScene(string sceneName) {
 
-    SceneManager.LoadScene(sceneName);
+    StartCoroutine(LoadSceneAnimated(sceneName));
+  }
+
+  public IEnumerator LoadSceneAnimated(string SceneNameAnim){
+
+   transition.SetTrigger("Start");
+   yield return new WaitForSeconds(1);
+   SceneManager.LoadScene(SceneNameAnim);
   }
 
 }
