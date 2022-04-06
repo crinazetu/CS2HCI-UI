@@ -8,9 +8,23 @@ public class ChangeScene : MonoBehaviour
   public Animator transition;
   
 public void Update(){
-  if (SceneManager.GetActiveScene().name == "BetterLook" && Input.GetKeyDown(KeyCode.Backspace)){
+  
+  if (Input.GetKeyDown(KeyCode.Backspace)){
+    //StartCoroutine(LoadSceneAnimated("Scan screen"));
+
+    if (SceneManager.GetActiveScene().name == "BetterLook"){
     StartCoroutine(LoadSceneAnimated("Scan screen"));
   }
+
+  if (SceneManager.GetActiveScene().name == "Login"){
+    StartCoroutine(LoadSceneAnimated("StartScreen"));
+  }
+
+  if (SceneManager.GetActiveScene().name == "Camera Screen"){
+    StartCoroutine(LoadSceneAnimated("Scan screen"));
+  }
+  }
+  
 }
 
   public void LoadScene(string sceneName) {

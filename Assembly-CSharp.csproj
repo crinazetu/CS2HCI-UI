@@ -36,12 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Heathen Engineering\Samples\UX Examples\Flat Icons [Free]\ToggleSetAnimatorBoolean.cs" />
-     <Compile Include="Assets\ChangeScene.cs" />
      <Compile Include="Assets\LevelLoader.cs" />
-     <Compile Include="Assets\EnableItemsInBag.cs" />
-     <Compile Include="Assets\scriptforbool.cs" />
      <Compile Include="Assets\productdetails.cs" />
+     <Compile Include="Assets\EnableItemsInBag.cs" />
+     <Compile Include="Assets\_Heathen Engineering\Samples\UX Examples\Flat Icons [Free]\ToggleSetAnimatorBoolean.cs" />
+     <Compile Include="Assets\scriptforbool.cs" />
+     <Compile Include="Assets\ChangeScene.cs" />
+     <Compile Include="Assets\hovercode.cs" />
+     <Compile Include="Assets\hoverinfo.cs" />
      <None Include="Assets\_Heathen Engineering\Documentation\UX\Flat Icons [Free]\Read Me.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
